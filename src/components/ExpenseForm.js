@@ -59,7 +59,7 @@ export default class ExpenseForm extends React.Component {
         {this.state.error && <p className="form__error">{this.state.error}</p>}
         <input
           type="text"
-          placeholder="Description"
+          placeholder="名稱"
           autoFocus
           className="text-input"
           value={this.state.description}
@@ -67,7 +67,7 @@ export default class ExpenseForm extends React.Component {
         />
         <input
           type="text"
-          placeholder="Amount"
+          placeholder="金額"
           className="text-input"
           value={this.state.amount}
           onChange={this.onAmountChange}
@@ -81,14 +81,14 @@ export default class ExpenseForm extends React.Component {
           isOutsideRange={() => false}
         />
         <textarea
-          placeholder="Add a note for your expense (optional)"
+          placeholder="描述"
           className="textarea"
           value={this.state.note}
           onChange={this.onNoteChange}
         >
         </textarea>
         <div>
-          <button className="button">Save Expense</button>
+          <button className="button">儲存記錄</button>
         </div>
       </form>
     )

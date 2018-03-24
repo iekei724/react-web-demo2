@@ -32,7 +32,7 @@ export class ExpenseListFilters extends React.Component {
             <input
               type="text"
               className="text-input"
-              placeholder="Search expenses"
+              placeholder="搜尋"
               value={this.props.filters.text}
               onChange={this.onTextChange}
             />

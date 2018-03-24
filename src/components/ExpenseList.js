@@ -6,9 +6,9 @@ import selectExpenses from '../selectors/expenses';
 export const ExpenseList = (props) => (
   <div className="content-container">
     <div className="list-header">
-      <div className="show-for-mobile">Expenses</div>
-      <div className="show-for-desktop">Expense</div>
-      <div className="show-for-desktop">Amount</div>
+      <div className="show-for-mobile">項目</div>
+      <div className="show-for-desktop">項目</div>
+      <div className="show-for-desktop">金額</div>
     </div>
     <div className="list-body">
       {
