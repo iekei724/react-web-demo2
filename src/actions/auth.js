@@ -11,6 +11,13 @@ export const startLogin = () => {
   };
 };
 
+// 2021-02-11 新增匿名登入機制
+export const startLoginWithAnonymously = () => {
+  return () => {
+    return firebase.auth().signInAnonymously();
+  };
+};
+
 export const logout = () => ({
   type: 'LOGOUT'
 });
